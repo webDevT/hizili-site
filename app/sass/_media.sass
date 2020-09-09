@@ -1,0 +1,399 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.top-header		
+		min-height: 5.469vw
+	.header 
+		font-size: 1.733vw
+	.wrapper 
+		max-width: 100%
+		width: 100%
+	.header__user
+		padding: 1.094vw
+		padding-left: 1.75vw 
+		padding-right: 3.438vw
+		img 
+			width: 3.125vw
+	.header__menu ul li
+		padding: 0 2.500vw
+		margin: 0
+		position: relative
+		display: flex 
+		align-items: center 
+		justify-content: center
+
+	.header__menu ul li:before 
+		content: ''
+		position: absolute
+		width: 0.469vw
+		height: 3.594vw
+		background: #d9dbe1
+		left: 0
+	.header__menu ul li:first-child 
+		margin-left: 1.876vw
+	.menu-link span
+		display: none
+	.header__menu ul li:first-child:before 
+		display: none
+	.header__menu ul li:last-child 
+		padding-left: 2.187vw
+	.menu-link:hover:after 
+		width: 4.5vw
+	.menu-link:after
+		height: 0.155vw
+		bottom: -0.3125vw
+	
+	.item-box__row
+		flex-wrap: wrap
+		justify-content: flex-start
+	.item-box 
+		padding: 2.188vw
+		padding-bottom: 1.87vw
+	.item-box--top
+		.item-box__col
+			width: auto
+			margin-bottom: 2.500vw
+			.text,
+			.item-box__col--money .col-title
+				//line-height: 2.5vw
+			
+
+		.item-box__col--detail
+			width: 100%
+		.item-box__col:first-child  
+			padding-right: 4.063vw
+			.col-title 
+				line-height: 1.2
+		.item-box__col:nth-child(2),
+		.item-box__col:nth-child(3),
+		.item-box__col:nth-child(4)
+
+			padding: 0 1.8vw
+		.item-box__col:nth-child(4)
+			padding-right: 0
+		.item-box__col:nth-child(4):after
+			display: none
+		// 	width: 13.750vw
+		// .item-box__col:nth-child(3)
+		// 	width: 23.438vw
+		// .item-box__col:nth-child(4)
+		// 	width: 19.688vw
+	.item-box__header
+		margin-bottom: 3.125vw
+
+	.col-title,
+	.col-title.col-title--aqua
+		line-height: 0.6
+
+	.item-box__col:after
+		width: 0.938vw
+	.col-link 
+		br 
+			display: none
+	.text,
+	.item-box__col--money .col-title 
+		font-size: 2.4vw
+	.item-box__col--money-img
+		width: 9.063vw
+		height: 9.063vw
+		margin-right: 1.250vw
+	.item-box__col--money-value
+		font-size: 4.800vw
+	.col-title.col-title--aqua
+		font-size: 2.800vw
+	.item-box__col--money
+		padding-right: 0
+	.text-box__title
+		padding-top: 0 
+		padding-left: 0
+		padding-bottom: 0
+	.open-new img
+		width: 5.938vw
+		height: 5.938vw
+		margin-left: 1.250vw
+	.item-box__header
+		align-items: center
+	.col-title,
+	.col-title.col-title--aqua
+		font-size: 1.866vw
+	.item-box__col--detail .col-title
+		font-size: 2.800vw
+		color: $blue
+	.mobile-buttons
+		display: flex 
+		width: 100%
+		margin-bottom: 2.188vw
+		justify-content: space-between 
+		align-items: center
+		.button 
+			width: 49%
+			height: 10.625vw
+	.button 
+		font-size: 4.266vw
+		a 
+			font-size: 4.266vw
+	.row-two-col
+		flex-direction: column
+	.row-two-col .item-box.item-box--top
+		width: 100%
+	.row-two-col .item-box__col:nth-child(2)
+		max-width: 100%
+	.row-two-col .item-box__col:last-child
+		max-width: 100%
+	.contact-wrapper
+		width: 100%
+		display: flex
+		justify-content: space-between
+		padding: 1.563vw
+		margin-left: 0
+		background: url('../img/contact-mobil-bg.png')
+		background-size: cover
+		background-repeat: no-repeat
+	.contact-wrapper__header
+		padding-left: 1.563vw 
+		img 
+			width: 10vw
+			margin-right: 2.5vw
+		.text 
+			font-size: 3.734vw
+			line-height: 1.286
+			span 
+				display: block
+				font-size: 4.266vw
+	.contact-wrapper__button
+		width: 19.375vw
+		font-size: 2.797vw
+		img 
+			width: 4.063vw
+	.contact-wrapper__button--aqua 
+		margin-right: 1.250vw
+	.contact-wrapper__button--grey
+		img 
+			width: 4.3vw
+	.contact-wrapper__buttons
+		padding-top: 0
+	.item-box-col-8
+		width: 100%
+		padding: 0
+	.item-box__line--header
+		font-size: 3.2vw
+	.item-box-col-8 .item-box__line--header--lg a
+		font-size: 2.400vw
+		color: $aqua
+	.item-box-col-8 .item-box__line--header--lg
+		padding: 3.125vw
+	.table-header
+		font-size: 2.4vw
+	.table-row
+		font-size: 2.134vw
+		display: none
+		padding: 1.875vw 2.5vw
+		border-bottom-width: 1px
+	.table-row:first-child,
+	.table-row:nth-child(2),
+	.table-row:nth-child(3),
+	.table-row:nth-child(4),
+	.table-row:nth-child(5),
+		display: flex
+	.table-col__img
+		width: 2.8vw
+	.table-row .table-col img
+		width: 2.2vw
+	.table-row:before
+		width: 0.938vw
+	.item-box-col-4
+		width: 48.5%
+		padding: 0
+	.item-header-mobil
+		display: block
+	.item-header-desktop
+		display: none
+	.item-box__line
+		padding: 1.875vw 3.125vw
+		font-size: 2.4vw
+		border-bottom-width: 1px
+	.item-box__line.sub-item
+		padding-left: 6.875vw
+		padding-right: 5vw
+	.item-box__line-img
+		width: 3.750vw
+		img
+			width: 2.813vw
+	.item-box__line.sub-item .item-box__line-img
+		width: 4.688vw
+	.row-two-col--2
+		flex-direction: row
+		display: flex
+		flex-wrap: wrap
+		.item-box-col-4:first-child 
+			margin-right: 1.5%
+		.item-box-col-4:nth-child(2) 
+			margin-left: 1.5%
+	.mobil-hide
+		display: none
+	.item-box__line--header
+		img 
+			width: 3.438vw
+	.desktop-hide
+		display: block
+	.mobil-platforms__text
+		text-align: center
+		font-size: 3.200vw
+		font-family: $sans1-semi-bold
+		font-weight: 600
+		padding: 1.875vw
+	.mobil-platforms__button
+		width: 100% 
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 10.625vw
+		border-radius: 2px
+		
+		a 
+			font-size: 3.472vw
+			color: #f4f4f4
+		img 
+			width: 4.2vw
+	.mobil-platforms__button--aqua
+		background: $aqua
+	.mobil-platforms__content
+		padding-left: 1.250vw
+		padding-right: 1.250vw
+		padding-bottom: 1.563vw
+	.mobil-platforms__button--blue
+		background: $blue
+		margin-top: 1.563vw
+	.education-video-text
+		display: flex
+		font-size: 3.734vw
+	.education-video
+		padding-left: 0 
+		padding-right: 0
+		padding: 2.813vw 0
+		width: 100%
+		justify-content: space-between
+		padding-left: 4vw
+		padding-right: 4vw
+		span 
+			margin-left: 1.5vw
+			font-family: $sans1
+			font-weight: 600
+		svg 
+			width: 8.750vw
+			height: 8.750vw
+			min-width: 8.750vw
+			min-height: 8.750vw
+			margin-left: 1.5vw
+	.education-videos 
+		flex-direction: column
+	.education-video-text
+		align-items: flex-end
+	.education-video--1 
+		margin-bottom: 1.250vw
+	.footer__container 
+		padding: 1vw 0
+		font-size: 3.200vw
+		img 
+			width: 9vw
+			top: -2vw
+	.footer-right
+		padding-left: 9vw
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.top-header
+		min-height: 10.938vw
+	.header 
+		font-size: 3.466vw
+	.header__user
+		padding: 2.188vw
+		padding-left: 2.5vw 
+		padding-right: 3.438vw
+		img 
+			width: 6.250vw
+	.header__menu ul li
+		padding: 0 2.500vw
+	.header__menu ul li:first-child 
+		margin-left: 0.938vw
+	.header__menu ul li:before
+		width: 0.938vw
+		height: 7.188vw
+	.header__menu ul li:last-child 
+		padding-left: 4.375vw
+	.menu-link:hover:after 
+		width: 9.063vw
+	.menu-link:after
+		height: 0.313vw
+		bottom: -0.625vw
+	
+
+		
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+

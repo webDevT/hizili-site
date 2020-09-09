@@ -1,0 +1,479 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+	font-family: $sans1
+	font-size: 14px
+	background: #e8eaf5
+	font-weight: $reg
+	color: $blue-text
+	font-weight: 400
+	margin-bottom: 0
+ul 
+	list-style: none
+	padding-left: 0
+	margin-bottom: 0
+a,
+a:hover 
+	text-decoration: none
+
+.wrapper
+	max-width: 1000px 
+	margin: 0 auto
+.link-aqua
+	color: $aqua
+	text-decoration: underline
+	font-family: $sans1-bold
+.link-aqua:hover 
+	color: $aqua
+	text-decoration: underline
+
+//end global style
+
+//start top header style
+.top-header 
+	background: $blue
+	min-height: 60px
+	width: 100%
+.button 
+	display: flex 
+	justify-content: center 
+	align-items: center
+	font-family: $sans3-semi-bold
+	font-weight: 600
+	a 
+		width: 100% 
+		height: 100% 
+		display: flex 
+		justify-content: center 
+		align-items: center
+		font-family: $sans3-semi-bold
+		font-weight: 600
+.button--aqua
+	background: $aqua 
+	color: #fff 
+	a
+		color: #fff
+.button--taransparent-blue 
+	border: 1px solid $blue 
+	color: $blue 
+	a 
+		color: $blue
+//end top header style
+
+//start header style
+.header 
+	background: #f8f8f8
+	font-size: 16px 
+	font-weight: $semi-bold
+	font-family: $sans3-semi-bold
+	font-weight: 600
+	box-shadow: 2.121px 2.121px 3.92px 0.08px rgba(0, 0, 0, 0.1)
+	.wrapper 
+		display: flex 
+		justify-content: space-between 
+		align-items: center
+.header__user
+	img 
+		width: 30px 
+		height: 30px
+.header__menu
+	ul 
+		display: flex
+		li 
+			padding: 0 15px 
+			margin-right: 40px
+.header__user
+	display: flex
+	align-items: center
+	background: $aqua
+	color: #fff
+	padding: 15px 25px
+	img
+		margin-right: 5px
+.header__user:hover 
+	color: #fff
+.menu-link
+	color: #a1adbb
+	position: relative
+	transition: all .5s
+
+.menu-link:after 
+	content: ''
+	background: $aqua
+	height: 2px 
+	width: 0px
+	display: block 
+	position: absolute 
+	bottom: -4px
+	left: 50%
+	transform: translateX(-50%)
+	transition: all .5s
+	opacity: 0
+
+
+.menu-link:hover 
+	color: $blue
+.menu-link:hover:after 
+	width: 46px
+	opacity: 1
+//end header style
+
+//start item box
+.item-box 
+	width: 970px
+	max-width: 93.750vw
+	background: #fff
+	margin: 0 auto
+	margin-top: 10px
+	padding: 11px
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2)
+	border-radius: 2px
+.text-box__title
+	padding-top: 9px
+	padding-left: 9px
+	padding-bottom: 20px
+	
+.text
+	font-family: $sans1
+	color: $blue-text
+	font-weight: 400
+	span 
+		font-family: $sans1-bold
+		font-weight: 700
+
+
+.item-box__header
+	display: flex 
+	justify-content: space-between
+.open-new
+	display: flex
+	align-items: center 
+	cursor: pointer
+	img 
+		width: 25px 
+		height: 25px
+		margin-left: 10px
+.col-title
+	text-transform: uppercase
+	font-size: 13px
+
+.item-box__col--money-img
+	width: 50px 
+	height: 50px
+	margin-right: 11px
+.item-box__row
+	display: flex 
+	justify-content: space-around
+.item-box__col--money
+	display: flex
+	padding-right: 25px
+	.item-box__col-wrapper
+		display: flex 
+		align-items: center
+	.col-title 
+		font-size: 14px
+.item-box__col--money-value
+	font-size: 28px 
+	font-weight: 700
+	color: $aqua
+	font-family: $sans1-bold
+	line-height: 0.9
+
+.item-box__col
+	margin-bottom: 10px
+	position: relative
+	display: flex 
+	justify-content: center 
+	align-items: center
+	width: 100%
+.item-box__col:first-child 
+	width: 15.139vw
+.item-box__col:after 
+	content: ''
+	position: absolute 
+	height: 100% 
+	width: 4px 
+	top: 0 
+	right: 0
+	border-radius: 4px
+	display: block 
+	background: rgb(217, 219, 225)
+.item-box__row .item-box__col:last-child:after 
+	display: none
+.col-text
+	font-family: $sans1-semi-bold
+	font-weight: 600
+	font-size: 16px
+.col-title.col-title--aqua
+	color: $aqua
+.col-link
+	text-align: center 
+	font-family: $sans1-semi-bold
+	font-weight: 600
+	text-decoration: underline
+	font-size: 14px
+	line-height: 1.2
+.col-wrap
+	display: flex
+	justify-content: space-between
+.mobile-buttons
+	display: none
+.row-two-col
+	display: flex
+	justify-content: space-between
+	width: 970px
+	max-width: 93.750vw
+	margin: 0 auto
+	.item-box.item-box--top
+		width: 75%
+		margin-left: 0
+	.item-box__col:nth-child(2)
+		max-width: 90px
+	.item-box__col:last-child
+		max-width: 90px
+.col-title--blue
+	color: $blue
+.contact-wrapper
+	width: 25%
+	margin-right: 0
+	margin-left: 10px
+	background: url('../img/contact-bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+.contact-wrapper__header
+	display: flex
+	align-items: center
+	justify-content: center
+	img 
+		width: 19px
+		margin-right: 8px
+	.text 
+		color: #fff
+//end item box
+.contact-wrapper__buttons
+	display: flex 
+	justify-content: space-between
+	padding-top: 10px
+.contact-wrapper__button
+	width: 49%
+	text-align: center
+	font-size: 14px
+	font-family: $sans3-semi-bold 
+	font-weight: 600
+	padding: 7px
+	line-height: 1
+	border-radius: 2px
+	img 
+		margin-bottom: 5px
+		width: 23px
+.contact-wrapper__button--aqua
+	background: $aqua
+	color: #fff
+
+.contact-wrapper__button--aqua:hover 
+	color: #fff
+.contact-wrapper__button--grey
+	background: #f0f0f0
+	color: $blue
+.contact-wrapper__button--grey:hover 
+	color: $blue	
+
+.item-box-col-4
+	width: 33%
+	margin-left: 0
+	padding: 0
+
+.item-box-col-8
+	width: 66% 
+	margin-right: 0
+	padding: 0
+.item-box__line
+	width: 100%
+	padding: 8px 14px
+
+	border-bottom: 2px solid #f1f2f6
+	font-size: 16px
+	display: flex
+	align-items: center
+.item-box__line:last-child 
+	border-bottom: none
+.item-box__line--header
+	color: $blue 
+	font-size: 18px
+
+.item-box__line-img
+	width: 30px
+	display: flex 
+	align-items: center
+	justify-content: flex-start
+	img 
+		width: 22px
+.item-box__line.sub-item
+	padding-left: 44px
+	color: #7f8389
+	padding-right: 30px
+	justify-content: space-between
+	.item-box__line-img 
+		width: 35px
+.sub-item__wrapper
+	display: flex
+	align-items: center
+.item-box-col-8
+	.item-box__line--header--lg
+		border-bottom: none
+		padding-bottom: 20px
+		justify-content: space-between
+		display: flex
+		align-items: center
+		a
+			font-size: 14px
+			text-decoration: underline
+		a:hover 
+			color: $blue
+.table-row
+	display: flex
+	justify-content: space-between	
+	border-bottom: 2px solid #f1f2f6
+	padding: 6px 15px
+	position: relative
+	font-size: 14px
+
+	.table-col:first-child 
+		width: 17.5%
+	.table-col:nth-child(2)
+		width: 17.5%
+		flex-direction: column
+		justify-content: center
+		align-items: flex-start
+		line-height: 1.3
+	.table-col:nth-child(3)
+		width: 32.5%
+		display: flex 
+		align-items: center
+	.table-col:nth-child(4)
+		width: 18.5%
+	.table-col:nth-child(5)
+		width: 14%
+		font-family: $sans1-semi-bold
+		font-weight: 600
+
+	.table-col
+		display: flex 
+		align-items: center
+		img 
+			width: 15px
+.table-col__img
+	width: 20px 
+.table-row:before 
+	content: ''
+	width: 5px
+	background: #d9dbe1
+	height: 100% 
+	position: absolute 
+	top: 0 
+	left: 0
+.table-header
+	background: #f1f2f6
+	color: #999999	
+	border-bottom: none
+	border-left: none
+	font-size: 15px
+	.table-col:nth-child(5)
+		font-family: $sans1
+		font-weight: 400
+.table-header:before 
+	display: none
+.table-row--light-grey:before
+	background: #f1f2f6
+.table-row:last-child 
+	//border-bottom: none
+.item-header-mobil
+	display: none
+.desktop-hide
+	display: none
+.education-videos
+	width: 970px 
+	margin: 0 auto 
+	max-width: 93.750vw
+	margin-top: 10px 
+	margin-bottom: 10px
+	display: flex 
+	justify-content: space-between
+.education-video
+	width: 49.5%
+	display: flex 
+	align-items: center
+	font-size: 28px
+	text-align: center
+	line-height: 1.2
+	color: #fff
+	span 
+		font-family: $sans1-semi-bold
+		font-weight: 600
+	svg 
+		width: 64px 
+		height: 64px
+		margin-left: 20px
+.education-video:hover 
+	color: #fff
+.education-video--1
+	background: url('../img/video1.png')
+	background-size: cover 
+	padding: 30px 0
+	padding-left: 50px
+	.education-video-text
+		max-width: 309px
+.education-video--2
+	background: url('../img/video2.png')
+	background-size: cover 
+	padding: 30px 0
+	padding-left: 50px
+	.education-video-text
+		max-width: 309px
+
+.education-video--1:hover
+	.cls2-2
+		fill: #fff
+	.cls2-3
+		fill: #eff1f4
+
+.education-video--2:hover
+	.cls-2
+		fill: #fff
+	.cls-3
+		fill: #eff1f4
+.footer 
+	width: 100%
+	background: $aqua
+	overflow: hidden
+.footer__container
+	width: 970px
+	max-width: 93.750vw
+	margin: 0 auto
+	padding: 8px 0
+	color: #fff
+	display: flex 
+	justify-content: space-between 
+	align-items: center
+	font-size: 14px
+.footer-right
+	font-family: $sans2-bold
+	font-weight: 700
+	align-items: center
+	position: relative
+	padding-left: 38px
+	img
+		width: 35px
+		margin-right: 4px
+		position: absolute
+		top: -6px
+		left: 0
+.footer-left
+	font-family: $sans2-semi-bold
+	font-weight: 600
+@import "media"
+
+
+
