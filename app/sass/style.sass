@@ -113,9 +113,11 @@ a:hover
 	opacity: 0
 
 
-.menu-link:hover 
+.menu-link:hover, 
+.menu-link.active
 	color: $blue
-.menu-link:hover:after 
+.menu-link:hover:after,
+.menu-link.active:after
 	width: 46px
 	opacity: 1
 //end header style
@@ -575,7 +577,8 @@ a:hover
 .profile__tabs
 	display: flex
 	border-bottom: 2px solid #f1f2f6
-.profile__tab
+.profile__tab,
+.profile__tab-link
 	cursor: pointer 
 	width: 50%
 	display: flex 
@@ -587,8 +590,12 @@ a:hover
 	font-size: 16px 
 	text-transform: uppercase
 	color: #a1adbb
-
-.profile__tab.active 
+.profile__tab-link:hover
+	color: #a1adbb
+.profile__tab--three
+	width: 33.3%
+.profile__tab.active,
+.profile__tab-link.active
 	font-family: $sans1-semi-bold 
 	font-weight: 600
 	background: #f5f5f5
@@ -597,9 +604,12 @@ a:hover
 	display: none 
 .profile__tab-item:first-child
 	display: block	
-.profile__tab:first-child 
+.profile__tab,
+.profile__tab-link
 	position: relative
-.profile__tab:first-child:before
+	background: transparent
+.profile__tab:first-child:before,
+.profile__tab-link:first-child:before
 	content: ''
 	position: absolute
 	right: 0
@@ -609,6 +619,19 @@ a:hover
 	height: 70.5% 
 	width: 4px
 	border-radius: 5px
+	z-index: 1
+.profile__tab--three:nth-child(2):before
+	content: ''
+	position: absolute
+	right: 0
+	top: 50%
+	transform: translateX(50%) translateY(-50%)
+	background: #d9dbe1
+	height: 70.5% 
+	width: 4px
+	border-radius: 5px
+	z-index: 1
+
 .profile__tab-item
 	padding: 28px 20px 20px 20px
 .form-title
@@ -673,6 +696,151 @@ input:focus::placeholder
 	border-radius: 3px
 	cursor: pointer
 
+.title-semi-bold
+	font-size: 16px 
+	font-weight: 600
+	font-family: $sans3-semi-bold
+	margin-bottom: 11px
+	color: $blue
+.select--grey
+	background-color: #fafafa
+.row-two-col .item-box.item-box--top.item-box--grey
+	width: 100%
+	background: #fafafa
+	box-shadow: 0.559px 0.829px 4px 0px rgba(0, 0, 0, 0.25)
+	.item-box__row
+		justify-content: flex-start
+	.item-box__col:first-child
+		max-width: 100%
+		width: 250px
+		min-width: 250px
+		padding-left: 10px
+	.item-box__col:nth-child(2)
+		max-width: 140px
+	.item-box__col:nth-child(3)
+		padding-left: 34px
+		width: 100%
+		max-width: 100%
+		display: flex
+		justify-content: flex-start
+.payment-metods__tabs-wrapper
+	margin-top: 40px
+.payment-metods__tabs
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	.payment-metods__tab.transparent 
+		box-shadow: none 
+		background: transparent
+.payment-metods__tab
+	width: calc(33.3% - 7px)
+	margin-bottom: 7px	
+	background: rgb(250, 250, 250)
+	box-shadow: 0.559px 0.829px 4px 0px rgba(0, 0, 0, 0.25)
+	display: flex 
+	justify-content: center 
+	align-items: center
+	min-height: 90px
+	border-radius: 4px
+	img 
+		max-width: 47px
+	.img-wrapper 
+		width: 55px
+.payment-metods__tab--papara
+	.img-wrapper 
+		width: auto
+	img 
+		max-width: 87px
+		margin: 0 auto
+		display: block
+.payment-metods__tab-text
+	font-size: 21px
+	color: $blue
+	line-height: 1
+	font-family: $sans1-black
+	font-weight: 900
+.back-wrapper
+	font-size: 16px
+	
+	display: flex 
+	align-items: center
+	margin-bottom: 9px
+	a 
+		color: #a1adbb
+	svg 
+		width: 30px
+		margin-right: 9px
+		.cls1 
+			fill: #aec2d3
+.back-wrapper a:hover
+	color: $blue
+	svg
+		.cls-1 
+			fill: #83b2db
+		.cls-4 
+			fill: $blue	
+.payment-metods__tab--papar
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	div 
+		display: block
+		margin: 0 auto
+	.papare-logo
+		max-width: 85px
+		margin-left: 37px
+		margin-top: 2px
+.papara-page-text
+	position: relative 
+	display: inline-block
+	img 
+		position: absolute
+		width: 27px
+.top-arrow
+	right: 2px
+	top: 0
+	//transform: translateX(100%)
+.bottom-arrow
+	left: 7px
+	top: 85%
+.payment-metods__tab
+	position: relative
+.para-cek__item-text
+	
+	//white-space: nowrap
+	font-size: 10px 
+	color: #85919e
+.payment-metods__tab--para-cek
+	min-height: 100px
+	flex-direction: column
+	justify-content: space-between
+	padding-bottom: 10px
+
+
+.para-cek-item-wrapper
+	display: flex
+	align-items: center
+	min-height: 75px
+.success-wrapper
+	display: flex 
+	align-items: center 
+	flex-direction: column 
+	text-align: center
+	img 
+		width: 102px
+		margin-bottom: 10px
+.succes-title
+	font-size: 16px 
+	font-weight: 600 
+	color: $blue
+	font-family: $sans3-semi-bold
+.succes-text
+	font-size: 16px
+	
+.form-button--succ
+	padding-left: 20px 
+	padding-right: 20px
+	margin-top: 20px
 
 @import "media"
 

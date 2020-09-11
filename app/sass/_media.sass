@@ -385,11 +385,14 @@
 		width: 12.188vw
 	.bitcoin-logo
 		width: 21.250vw
-	.profile__tab
+	.profile__tab,
+	.profile__tab-link
 		font-size: 3.734vw
-	.profile__tab:first-child:before
+	.profile__tab:first-child:before,
+	.profile__tab-link:first-child:before
 		width: 3px
-	.profile__tab
+	.profile__tab,
+	.profile__tab-link
 		padding-top: 2.813vw 
 		padding-bottom: 2.813vw
 	.profile__tab-item
@@ -417,15 +420,103 @@
 	.form-title
 		br 
 			display: none
+	.profile__tab--three
+		flex-grow: 1
+		width: 100%
+		padding-left: 2.813vw
+		padding-right: 2.813vw
 
+	.profile__tabs
+		//justify-content: stretch
+	.profile__tab,
+	.profile__tab-link
+		white-space: nowrap
+	.title-semi-bold
+		font-size: 3.734vw
+		margin-bottom: 2.500vw
+	.row-two-col .item-box.item-box--top.item-box--grey
+		box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25)
+	
+		.item-box__row
+			justify-content: flex-start
+		.item-box__col:first-child
+			max-width: 100%
+			width: auto
+			padding-left: 1vw
+			min-width: 0vw
+			padding-right: 2.2vw
+		.item-box__col:nth-child(2)
+			max-width: 50vw
+			padding-left: 2.2vw
+			padding-right: 2.2vw
 
+		.item-box__col:nth-child(3)
+			padding-left: 2.2vw
+			width: auto
+			max-width: 100%
+			display: flex
+			justify-content: flex-start
+			padding-right: 0
+		.item-box__col
 
-		
+			margin-bottom: 0
+		.col-title
+			font-size: 2.400vw	
+		.col-text
+			font-size: 3.734vw
+	.payment-metods__tab-text
+		font-size: 3.2vw
+	.payment-metods__tab
+		min-height: 13.438vw
+		box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25)
 
+		.img-wrapper 
+			width: 8.125vw
+			img 
+				width: 6.563vw
+	.payment-metods__tab--papara
+		.img-wrapper
+			width: 13.750vw
 
-		
+			img 
+				width: 100%
+	.payment-metods__tab
+		width: calc(33.3% - 0.938vw)
+	.payment-metods__tabs-wrapper
+		margin-top: 6.250vw
+	.payment-metods__tab--papar .papare-logo
+		max-width: 11.875vw
+	.papara-page-text img
+		max-width: 3.750vw
+		width: 3.750vw
+	.payment-metods__tab--papar .papare-logo
+		margin-left: 6vw
+		margin-top: 1vw
+	.top-arrow
+		right: 0vw
 
+	.bottom-arrow
+		top: 100%
+	.payment-metods__tab--papar div
+		position: relative 
+		top: 0.5vw
+	.para-cek__item-text
+		font-size: 1.866vw
+		max-width: 16vw
+		text-align: center
+	.para-cek-item-wrapper
+		min-height: 12vw
+	.success-wrapper img
+		width: 25vw
 
+	.succes-title
+		font-size: 4.269vw
+
+	.succes-text
+		font-size: 3.734vw
+
+	.form-button--succ
+		width: 100%
 
 
 
@@ -475,6 +566,8 @@
 	.menu-link:after
 		height: 0.313vw
 		bottom: -0.625vw
+	.payment-metods__tab--papar .papare-logo
+		margin-top: -1vw
 	
 
 		

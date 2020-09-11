@@ -21,13 +21,13 @@
 		<div class="header__menu">
 			<ul>
 				<li>
-					<a class="menu-link active" href="index.html">Dashboard</a>
+					<a class="menu-link" href="index.html">Dashboard</a>
 				</li>
 				<li>
 					<a class="menu-link" href=""><span>Yatırım </span>Hesapları</a>
 				</li>
 				<li>
-					<a class="menu-link" href="para-yatir.html">Finans <span>işlemleri</span></a>
+					<a class="menu-link active" href="para-yatir.html">Finans <span>işlemleri</span></a>
 				</li>
 				<li>
 					<a class="menu-link" href="">IB <span>sayfası</span></a>
@@ -56,124 +56,49 @@
 	<div class="item-box item-box-col-8 item-box-col-8--left">
 		<div class="profile__tabs-wrapper">
 			<div class="profile__tabs">
-				<div class="profile__tab">
-					PROFİLİ DÜZENLE
-				</div>
-				<div class="profile__tab">
-					ŞİFRE SIFIRLAMA
-				</div>
+				<a href="para-yatir.html" class="profile__tab-link profile__tab--three">
+					PARA YATIR
+				</a>
+				<a href="para-cek.html" class="profile__tab-link profile__tab--three active">
+					PARA ÇEK
+				</a>
+				<a href="hesap-hareketleri.html" class="profile__tab-link profile__tab--three">
+					HESAP HAREKETLERİ
+				</a>
 			</div>
 
 			<div class="profile__tab-content">
-				<div class="profile__tab-item">
-					<div class="form-title">
-						Profil bilgilerinizi buradan güncelleyebilirsiniz.
-					</div>
-
-					<form action="">
-						<div class="form-row">
-							<div class="input-wrapper">
-								<label for="" class="input-label">İsim</label>
-								<input type="text" class="input input-complite" placeholder="James Ronald Dewey" value="James Ronald Dewey" disabled="">
-							</div>
-
-							<div class="input-wrapper">
-								<label for="" class="input-label">E-posta</label>
-								<input type="text" class="input input-complite" placeholder="james.dewey@gmail.com" value="james.dewey@gmail.com" disabled="">
-							</div>
-							
-						</div>
-
-						<div class="form-row">
-							<div class="input-wrapper">
-								<label for="" class="input-label">Telefon</label>
-								<input type="text" class="input input-complite" placeholder="0555 856 56 56" value="0555 856 56 56" disabled="">
-							</div>
-
-							<div class="input-wrapper">
-								<label for="" class="input-label">Posta kodu</label>
-								<input type="text" class="input" placeholder="34777" value="">
-							</div>
-							
-						</div>
-
-						<div class="form-row form-row--single">
-							<div class="input-wrapper">
-								<label for="" class="input-label">Adres</label>
-								<input type="text" class="input" placeholder="İstanbul mahallesi, İstanbul caddesi, İstanbul sokak, No:12 Blok:A 3/8" value="">
-							</div>
-
-							
-							
-						</div>
-
-						<div class="form-row">
-							<div class="input-wrapper">
-								<label for="" class="input-label">Şehir</label>
-								<input type="text" class="input" placeholder="İstanbul" value="">
-							</div>
-
-							<div class="input-wrapper">
-								<label for="" class="input-label">Ülke</label>
-								<select name="" id="">
-									<option value="">Türkiye</option>
-									<option value="">Türkiye</option>
-									<option value="">Türkiye</option>
-									<option value="">Türkiye</option>
-									<option value="">Türkiye</option>
-								</select>
-							</div>
-
-							
-							
-						</div>
-
-						<div class="form-row form-row--center">
-					
-								<button class="form-button" type="submit">
-									Bilgileri güncelle
-								</button>
-							
-						</div>
-					</form>
-				</div>
-
-
 
 				<div class="profile__tab-item">
-					<div class="form-title">
-						Şifrenizi yenilemek için aşağıdaki kutulara yeni şifrenizi iki kere yazınız. <br>
-Bundan sonra kullanacağınız giriş şifreniz bu olacaktır.
-					</div>
-
-					<form action="">
-						<div class="form-row">
-							<div class="input-wrapper">
-								
-								<input type="text" class="input input-complite" placeholder="Yeni şifre">
-							</div>
-
-							<div class="input-wrapper">
-								
-								<input type="text" class="input input-complite" placeholder="Yeni şifre tekrar">
-							</div>
-							
-						</div>
 
 					
 
-					
+		<div class="success-wrapper">
+			<img src="img/check-icon.svg" alt="">
 
+			<div class="succes-title">
+				Çekim işleminiz başlatıldı.
+			</div>
 
-						<div class="form-row form-row--center">
-					
-								<button class="form-button" type="submit">
-									Şifreyi sıfırla
+			<div class="succes-text">
+				Yönetimin onayı sonrası tarafınıza e-posta ile bilgilendirme yapılacaktır.
+			</div>
+
+				<button class="form-button form-button--succ">
+									Yeni bir yatırım yap
 								</button>
-							
-						</div>
-					</form>
+		</div>			
+
+				
+
+
+
+
+
+
 				</div>
+
+				
 
 			</div>
 		</div>
