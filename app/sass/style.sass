@@ -10,6 +10,7 @@ body
 	color: $blue-text
 	font-weight: 400
 	margin-bottom: 0
+	position: relative
 ul 
 	list-style: none
 	padding-left: 0
@@ -435,7 +436,8 @@ a:hover
 	.education-video-text
 		max-width: 309px
 
-.education-video--1:hover
+.education-video--1:hover,
+.popup-item svg:hover
 	.cls2-2
 		fill: #fff
 	.cls2-3
@@ -1063,7 +1065,8 @@ input:focus::placeholder
 .item-box.item-box--top.item-box--grey.item-box-no-bottom-border
 	border-bottom-left-radius: 0
 	border-bottom-right-radius: 0
-.item-gercec-col
+.item-gercec-col,
+.item-gercec-col2
 	width: 33.3%
 	display: flex 
 	justify-content: center 
@@ -1089,9 +1092,11 @@ input:focus::placeholder
 .item-gercec__val
 	font-family: $sans1-semi-bold 
 	font-weight: 600
-.item-gercec-col
+.item-gercec-col,
+.item-gercec-col2
 	position: relative
-.item-gercec-col:after 
+.item-gercec-col:after,
+.item-gercec-col2:after	
 	content: ''
 	background-color: rgb(217, 219, 225)
 	height: 46px
@@ -1099,9 +1104,11 @@ input:focus::placeholder
 	position: absolute
 	right: 0
 	border-radius: 10px
-.item-gercec-col:last-child
+.item-gercec-col:last-child,
+.item-gercec-col2:after
 	text-align: left
-.item-gercec-col:last-child:after 
+.item-gercec-col:last-child:after,
+.item-gercec-col2:after
 	display: none
 .item-gercec-mobil-link
 	display: none
@@ -1120,6 +1127,108 @@ input:focus::placeholder
 .gercile-header-right:hover
 	color: $blue 
 	text-decoration: underline
+.item-gercec-col-wrapper-btn.active 
+	background: transparent
+	color: $blue
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	border-color: rgb(26, 50, 76)
+	border-style: solid
+	border-radius: 3px
+	border-width: 1px
+.gercek-b
+	display: none 
+.gercek-b.active 
+	display: block
+.gercek-a
+	display: none
+.gercek-a.active
+	display: block
+.item-gercec-col-wrapper-btn
+	cursor: pointer
+.tab-gercile
+	display: flex
+	width: 66%
+	.item-gercec-col,
+	.item-gercec-col2
+		width: 100%
+
+.item-gercec-col.active,
+.item-gercec-col2.active	
+	.item-gercec-col-wrapper-btn
+		background: transparent
+		color: $blue
+		box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+		border-color: rgb(26, 50, 76)
+		border-style: solid
+		border-radius: 3px
+		border-width: 1px
+.item-gercec-col.active .item-gercec-col-wrapper-btn.item-gercec-col-wrapper-btn--start,
+.item-gercec-col2.active .item-gercec-col-wrapper-btn.item-gercec-col-wrapper-btn--start2
+	background: $blue 
+	color: #fff
+.row-two-col .item-box.item-box--top.item-box--grey .item-box__row
+	justify-content: center
+.demo-link
+	text-transform: uppercase 
+	text-decoration: underline
+	color: $blue
+.demo-link:hover 
+	color: $blue 
+	text-decoration: underline
+.popup 
+	position: fixed
+	top: 0 
+	left: 0 
+	width: 100% 
+	height: 100vh 
+	overflow-y: auto
+	background: rgba(0, 0, 0, .8)
+	display: none
+.popup.active	
+	display: flex 
+	justify-content: center
+	align-items: flex-start
+	padding-top: 11.250vw
+.popup__content
+	width: 480px
+	background: #fff
+	border-radius: 5px
+.popup__content__header
+	text-align: center
+	background: url('../img/popup-header.png')
+	height: 110px
+	display: flex 
+	justify-content: center
+	flex-direction: column 
+	align-items: center
+	color: #fff
+	font-size: 28px
+	line-height: 1.166
+.popup__content__header-bold-text
+	font-family: $sans1-semi-bold
+	font-weight: 600
+
+.popup-item__text 
+	font-size: 18px
+.popup-item
+	padding: 7px 20px 7px 20px
+	border-top: 2px solid #f1f2f6
+	cursor: pointer
+	display: flex 
+	justify-content: space-between 
+	align-items: center
+	border-left: 5px solid rgb(241, 242, 246)
+	color: $blue
+	svg 
+		width: 30px 
+		height: 30px
+.popup-item:hover 
+	color: $blue	
+.popup-item--dark
+	border-left: 5px solid rgb(217, 219, 225)
+.education-video
+	cursor: pointer
+
 
 
 @import "media"
