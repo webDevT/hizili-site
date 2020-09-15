@@ -11,6 +11,8 @@ body
 	font-weight: 400
 	margin-bottom: 0
 	position: relative
+	min-height: 100vh
+	padding-bottom: 37px
 ul 
 	list-style: none
 	padding-left: 0
@@ -27,7 +29,7 @@ a:hover
 	text-decoration: underline
 	font-family: $sans1-bold
 .link-aqua:hover 
-	color: $aqua
+	color: #319286
 	text-decoration: underline
 
 //end global style
@@ -91,10 +93,12 @@ a:hover
 	background: $aqua
 	color: #fff
 	padding: 15px 25px
+	transition: all .3s
 	img
 		margin-right: 5px
 .header__user:hover 
 	color: #fff
+	background: $aqua-dark
 .menu-link
 	color: #a1adbb
 	position: relative
@@ -158,6 +162,11 @@ a:hover
 		width: 25px 
 		height: 25px
 		margin-left: 10px
+.open-new:hover 
+	color: $aqua 
+	font-family: $sans1-semi-bold
+	font-weight: 600
+	text-decoration: underline
 .col-title
 	text-transform: uppercase
 	font-size: 13px
@@ -185,7 +194,7 @@ a:hover
 	line-height: 0.9
 
 .item-box__col
-	margin-bottom: 10px
+	//margin-bottom: 10px
 	position: relative
 	display: flex 
 	justify-content: center 
@@ -211,6 +220,9 @@ a:hover
 	font-size: 16px
 .col-title.col-title--aqua
 	color: $aqua
+.item-box__col--detail .col-title.col-title--aqua:hover 
+	color: #319286
+	text-decoration: underline
 .col-link
 	text-align: center 
 	font-family: $sans1-semi-bold
@@ -238,6 +250,9 @@ a:hover
 		max-width: 90px
 .col-title--blue
 	color: $blue
+.col-title--blue:hover 
+	color: $blue 
+	text-decoration: underline
 .contact-wrapper
 	width: 25%
 	margin-right: 0
@@ -274,12 +289,17 @@ a:hover
 .contact-wrapper__button--aqua
 	background: $aqua
 	color: #fff
-
+	transition: all 0.3s
+.contact-wrapper__button--aqua:hover
+	background: $aqua-dark
 .contact-wrapper__button--aqua:hover 
 	color: #fff
 .contact-wrapper__button--grey
 	background: #f0f0f0
 	color: $blue
+	transition: all 0.3s
+.contact-wrapper__button--grey:hover 
+	background: #fff
 .contact-wrapper__button--grey:hover 
 	color: $blue	
 
@@ -335,6 +355,8 @@ a:hover
 			text-decoration: underline
 		a:hover 
 			color: $blue
+.item-box-col-8
+	overflow: hidden
 .table-row
 	display: flex
 	justify-content: space-between	
@@ -342,6 +364,8 @@ a:hover
 	padding: 6px 15px
 	position: relative
 	font-size: 14px
+	transition: all 0.3s
+
 
 	.table-col:first-child 
 		width: 17.5%
@@ -367,6 +391,10 @@ a:hover
 		align-items: center
 		img 
 			width: 15px
+.table-row:hover 
+	transform: scale(1.01)
+.table-header:hover 
+	transform: scale(1)
 .table-col__img
 	width: 20px 
 .table-row:before 
@@ -412,6 +440,7 @@ a:hover
 	text-align: center
 	line-height: 1.2
 	color: #fff
+
 	span 
 		font-family: $sans1-semi-bold
 		font-weight: 600
@@ -419,6 +448,7 @@ a:hover
 		width: 64px 
 		height: 64px
 		margin-left: 20px
+
 .education-video:hover 
 	color: #fff
 .education-video--1
@@ -435,7 +465,19 @@ a:hover
 	padding-left: 50px
 	.education-video-text
 		max-width: 309px
-
+.education-video--1
+	.cls2-1
+		fill: #83b2db
+		transition: all .3s
+	.cls2-2
+		fill: #e3e7f2
+		transition: all .3s
+	.cls2-3
+		fill: #fff
+		transition: all .3s
+	.cls2-4
+		fill: #1a324c
+		transition: all .3s
 .education-video--1:hover,
 .popup-item svg:hover
 	.cls2-2
@@ -443,6 +485,19 @@ a:hover
 	.cls2-3
 		fill: #eff1f4
 
+.education-video--2
+	.cls-1
+		fill:#87e8d8
+		transition: all .3s
+	.cls-2
+		fill:#e3e7f2
+		transition: all .3s
+	.cls-3
+		fill:#fff
+		transition: all .3s
+	.cls-4
+		fill:#3db2a3
+		transition: all .3s
 .education-video--2:hover
 	.cls-2
 		fill: #fff
@@ -452,6 +507,10 @@ a:hover
 	width: 100%
 	background: $aqua
 	overflow: hidden
+	height: 37px
+	position: absolute
+	bottom: 0
+	left: 0
 .footer__container
 	width: 970px
 	max-width: 93.750vw
@@ -665,6 +724,7 @@ select
 	background-repeat: no-repeat
 	background-size: 16px
 	background-position: right 14px center
+	color: #3a4149
 input::placeholder 
 	color: #7f8389
 input:focus::placeholder 
@@ -697,6 +757,8 @@ input:focus::placeholder
 	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
 	border-radius: 3px
 	cursor: pointer
+	width: 235px 
+	height: 39px
 
 .title-semi-bold
 	font-size: 16px 
@@ -744,10 +806,15 @@ input:focus::placeholder
 	align-items: center
 	min-height: 90px
 	border-radius: 4px
+	transition: all 0.3s
 	img 
 		max-width: 47px
 	.img-wrapper 
 		width: 55px
+.payment-metods__tab:hover 
+	background: #fff
+	box-shadow: 0.559px 0.829px 8px 0px rgba(0, 0, 0, 0.4)
+
 .payment-metods__tab--papara
 	.img-wrapper 
 		width: auto
@@ -939,6 +1006,10 @@ input:focus::placeholder
 	align-items: center
 	color: #fff
 	font-family: $sans3-semi-bold
+	font-weight: 600
+.table-col__btn:hover 
+	color: #fff
+	background: $aqua-dark
 .row-two-col .item-box.item-box--top.item-box--grey .item-box__row--ib-wrap
 	display: flex 
 	justify-content: space-between
@@ -1020,15 +1091,21 @@ input:focus::placeholder
 	width: 235px
 	height: 39px
 	cursor: pointer
+	outline: none
+	font-family: $sans1-semi-bold
+	font-weight: 600
+.hesap-ac__button:focus
+	outline: none
 .hesap-ac__button.disabled
 	background-color: rgb(215, 218, 233)
 	box-shadow: none
 .hesap-ac__item.active
-	box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.4)
+	background: $blue
+	color: #fff
 .hesap-ac__button-wrapper
 	margin-bottom: 30px
 .hesap-ac__item-buttons
-	padding-top: 5px
+	padding-top: 10px
 	display: flex 
 	justify-content: center
 .hesap-ac__item-button
