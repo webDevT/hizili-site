@@ -718,7 +718,7 @@ select
 	border-color: rgb(173, 176, 193)
 	border-style: solid
 	padding: 0px 13px
-	color: #7f8389
+	color: #1a324c
 	outline: none
 select
 	cursor: pointer
@@ -743,6 +743,8 @@ input::placeholder
 	color: #7f8389
 input:focus::placeholder 
 	color: transparent
+input:focus
+	border: 1px solid $aqua-dark
 .input-complite
 	background: #eeeeee
 	border: none
@@ -1372,7 +1374,106 @@ input:focus::placeholder
 	transform: scale(1.03)
 .text.col-text:hover
 	color: #000
+.open-account
+	width: 535px 
+	margin: 0 auto 
+.open-account-tab
+	padding-top: 25px
+	padding-left: 0 
+	padding-right: 0
+	padding-bottom: 0
+.open-account__text
+	text-align: center
+	font-size: 15px
+	color: #7f8389
+	margin-bottom: 8px
+.open-account__first-col
+	width: 127px
+	display: flex 
+	align-items: center
+.open-account__third-col
+	width: 129px
+	padding-left: 9px
+	display: flex 
+	align-items: center
+.open-account--login
+	//width: 581px
+	.open-account__first-col
+		width: 140px
+		letter-spacing: -1px
+		line-height: 1.2
+	.open-account__third-col
+		width: 140px
+	.open-account__second-col
+
+	
+.open-account__form-row
+	display: flex
+.open-account__input-col
+	width: 280px
+.open-account__form-row
+	padding-top: 15px
+	align-items: center
+.open-account__icon
+	width: 32px
+	img 
+		max-width: 25px
+.open-account__label
+	font-size: 16px
+.input-error
+	color: #dd0404
+	font-family: 'Titillium Web', sans-serif
+	font-size: 14px
+	display: none
+	line-height: 1.2
+.open-account__form-row.error
+	.input-error
+		display: block
+	input 
+		border: 1px solid #dd0404
+.form-button--oppen-account
+	width: 100%
+.open-account__link
+	color: #1a324c
+	font-size: 16px
+	text-align: center 
+	font-weight: 600
+	font-family: $sans3-semi-bold
+	display: block
+.open-account__link:hover
+	color: #1a324c
+.open-account__form-row--footer
+	padding-bottom: 28px
+	.open-account__text
+		margin-bottom: 0
+.advant-account
+	padding-top: 70px
+	padding-bottom: 70px
+.item-box--inside-account
+	margin-bottom: 0
+.advant-login
+	padding-top: 24px 
+	padding-bottom: 24px
+.login-page-header
+	height: 53px
+	display: flex 
+	justify-content: center 
+	align-items: center
+	font-size: 16px 
+	font-family: $sans1-semi-bold
+	font-weight: 600
+.pen-account__form-row--password
+	padding-top: 10px
+	line-height: 1
+	.open-account__input-col
+		display: flex 
+		justify-content: flex-end
+		a
+			color: $blue
+			text-decoration: underline
+
 @import "media"
+
 
 
 
