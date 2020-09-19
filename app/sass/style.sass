@@ -20,7 +20,12 @@ ul
 a,
 a:hover 
 	text-decoration: none
-
+button,
+button:hover 
+	outline: none 
+	outline: none
+button:focus 
+	outline: none
 .wrapper
 	max-width: 1000px 
 	margin: 0 auto
@@ -715,7 +720,7 @@ select
 	padding: 0px 13px
 	color: #7f8389
 	outline: none
-select 
+select
 	cursor: pointer
 	-webkit-appearance: none
 	-moz-appearance: none
@@ -725,6 +730,15 @@ select
 	background-size: 16px
 	background-position: right 14px center
 	color: #3a4149
+.ui-datepicker-trigger
+	position: absolute
+	right: 14px
+	top: 50%
+	width: 16px
+	transform: translateY(-50%)
+	cursor: pointer
+.date-wrapper
+	position: relative
 input::placeholder 
 	color: #7f8389
 input:focus::placeholder 
@@ -759,7 +773,19 @@ input:focus::placeholder
 	cursor: pointer
 	width: 235px 
 	height: 39px
-
+.form-button--user
+	padding: 3px 3px
+	display: flex 
+	align-items: center 
+	justify-content: center
+	width: 235px
+	height: 39px
+	transition: all .5s
+.form-button--user:hover,
+.form-button:hover
+	background: $aqua-dark
+.form-button
+	transition: all 0.5s
 .title-semi-bold
 	font-size: 16px 
 	font-weight: 600
@@ -910,6 +936,18 @@ input:focus::placeholder
 	padding-left: 20px 
 	padding-right: 20px
 	margin-top: 20px
+	font-family: $sans3-semi-bold
+	font-size: 14px 
+	font-weight: 600
+	transition: all .5s
+	display: flex 
+	align-items: center
+	justify-content: center
+	outline: none
+.form-button--succ:focus 
+	outline: none
+.form-button--succ:hover 
+	background: $aqua-dark
 .item-box--right
 	width: 100%
 	padding-bottom: 0
@@ -1093,9 +1131,12 @@ input:focus::placeholder
 	cursor: pointer
 	outline: none
 	font-family: $sans1-semi-bold
+	transition: all .5s
 	font-weight: 600
 .hesap-ac__button:focus
 	outline: none
+.hesap-ac__button:hover 
+	background: $aqua-dark
 .hesap-ac__button.disabled
 	background-color: rgb(215, 218, 233)
 	box-shadow: none
@@ -1116,17 +1157,26 @@ input:focus::placeholder
 	font-weight: 600
 	margin: 0 2.5px
 	cursor: pointer
+	outline: none
+	transition: all 0.3s
+.hesap-ac__item-button:focus 
+	outline: none
 .hesap-ac__item-button--aqua
 	background-color: rgb(61, 178, 163)
 	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
 	border: none
 	color: #fff
+.hesap-ac__item-button--aqua:hover
+	background: #319286
 .hesap-ac__item-button--grey
 	background-color: rgb(250, 250, 250)
 	box-shadow: 0.559px 0.829px 4px 0px rgba(0, 0, 0, 0.25)
 	border-width: 1px
 	border-color: rgb(26, 50, 76)
 	border-style: solid
+.hesap-ac__item-button--grey:hover 
+	color: #fff
+	background: $blue
 .text-box__title--not-padding
 	padding-top: 0 
 	padding-bottom: 5px
@@ -1305,9 +1355,23 @@ input:focus::placeholder
 	border-left: 5px solid rgb(217, 219, 225)
 .education-video
 	cursor: pointer
+.form-button--succ2
+	width: 170px
+	height: 35px
+.col-title.col-title:hover 
+	font-weight: 600
+.item-box__col--money-img,
+.item-box__col--money-value,
+.col-text
+	transition: all 0.3s
+.item-box__col--money-img:hover
+	transform: scale(1.1)
 
+.item-box__col--money-value:hover,
 
-
+	transform: scale(1.03)
+.text.col-text:hover
+	color: #000
 @import "media"
 
 

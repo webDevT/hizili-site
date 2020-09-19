@@ -7,6 +7,8 @@
 	<title>Hizili</title>
 	<link href="//db.onlinewebfonts.com/c/471a8cf5be29aa662f525c3b132187d7?family=Hurme+Geometric+Sans+No.3" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="css/libs.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://resources/demos/style.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -130,24 +132,17 @@
 					<div class="form-row">
 							<div class="input-wrapper">
 								<label for="" class="input-label">Başlangıç zamanı</label>
-								<select name="" id="">
-									<option value="">gg/aa/yy</option>
-									<option value="">gg/aa/yy</option>
-									<option value="">gg/aa/yy</option>
-									<option value="">gg/aa/yy</option>
-									<option value="">gg/aa/yy</option>
-								</select>
+								<div class="date-wrapper">
+									<input type="text" class="datepicker" id="datepicker" placeholder="gg/aa/yy">
+								</div>
+
 							</div>
 
 							<div class="input-wrapper">
 								<label for="" class="input-label">Bitiş zamanı</label>
-								<select name="" id="">
-									<option value="">gg/aa/yy</option>
-									<option value="">gg/aa/yy</option>
-									<option value="">gg/aa/yy</option>
-									<option value="">gg/aa/yy</option>
-									<option value="">gg/aa/yy</option>
-								</select>
+								<div class="date-wrapper">
+									<input type="text" class="datepicker" id="datepicker" placeholder="gg/aa/yy">
+								</div>
 							</div>
 
 							
@@ -582,6 +577,7 @@ ile ulaş
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

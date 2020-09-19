@@ -7,7 +7,7 @@ $(function(){
 
 
 $('.hesap-ac__item').click(function(){	
-		$(this).toggleClass('active');	
+		$(".hesap-ac__item").removeClass("active").eq($(this).index()).addClass("active");
 		$('.hesap-ac__button').removeClass('disabled');
 
 	});
@@ -75,5 +75,16 @@ jQuery(function($){
   });
 });
 
+
+ // ------ start input width calendar---
+$( function() {
+    $( ".datepicker" ).datepicker({
+      showOn: "button",
+      buttonImage: "img/arrow-down.svg",
+      buttonImageOnly: true,
+      buttonText: "Select date"
+    });
+  } );
+// ------ end input width calendar---
 
 });
