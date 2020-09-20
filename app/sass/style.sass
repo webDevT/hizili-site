@@ -1472,6 +1472,50 @@ input:focus
 			color: $blue
 			text-decoration: underline
 
+.card
+	position: relative
+	perspective: 1000px
+	cursor: pointer
+	min-height: 152px
+	overflow-x: hidden		
+.front
+  position: absolute
+  top: 0  
+  left: 0
+
+  width: 100%
+  transition: 1s
+  backface-visibility: hidden
+.back 
+  position: absolute
+  transform: rotateX(180deg)
+  top: 0 
+  left: 0
+
+  width: 100%
+  transition: 1s
+  backface-visibility: hidden
+  //padding: 10px 20px
+.card.active .front
+  transform: rotateX(180deg)
+.card.active .back
+  transform: rotateX(360deg)
+.item-box-not-top-padding
+	margin-top: 0
+.item-box__row-first
+  padding-bottom: 10px
+.item-box--top .item-box__col--bakiye
+	max-width: 90px
+.item-box__col--detail--front
+	max-width: 90px
+	min-width: 90px
+	.details-link-btn:hover 
+		color: $aqua
+
+.item-box__col--buttons 
+	min-width: 250px
+.guncule-col-mobile
+	display: none
 @import "media"
 
 

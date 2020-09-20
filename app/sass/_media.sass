@@ -7,6 +7,7 @@
 	/**/
 
 
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
@@ -784,6 +785,94 @@
 		margin-top: 0
 	.row-two-col--2
 		margin-bottom: 0
+	.button
+		border-radius: 3px
+	.card
+		min-height: 48vw
+	.item-box__col--detail--front
+		min-width: 100% 
+		max-width: 100%
+	.item-box__col--buttons
+		min-width: 100%
+		max-width: 100%
+		.hesap-ac__item-button
+			width: 100%
+		.hesap-ac__item-buttons
+			width: 100%
+			padding-top: 0
+
+	.item-box__col--buttons:after 
+		display: none
+	.item-box__row-first
+		padding-bottom: 0
+	.item-box__col-wrapper
+		display: flex 
+		flex-direction: column
+	.item-box__col--money
+		.item-box__col-wrapper
+			flex-direction: row
+	.item-box__col--detail .col-title
+		font-family: $sans1
+		font-weight: 400 
+		font-size: 2.8vw
+	.hesap-ac__item-button--grey
+		box-shadow: none
+		background: transparent
+	.hesap-ac__item-button--aqua
+		box-shadow: 0 0.313vw 0.938vw 0 rgba(0, 0, 0, 0.2)
+	.item-box__col:after
+		height: 80% 
+		transform: translateY(-50%)
+		top: 50%
+	.item-box--top .item-box__col--detail
+		margin-top: 1vw
+	.guncule-col-mobile
+		display: flex
+	.green-col
+		width: 50% 
+		min-width: 50% 
+		max-width: 50%
+		height: 7.250vw
+		margin-top: 1.5vw
+	.green-col:before
+		content: ''
+		position: absolute
+		height: 100%
+		width: 0.938vw
+		top: 0
+		left: 0
+		border-radius: 4px
+		display: block
+		background: #d9dbe1
+		display: block
+	.green-col--first:before
+		display: none
+	.green-col:after 
+		display: none
+	.item-box__col--detail .col-title--aqua 
+		color: $aqua
+		margin-top: 1.5vw
+	.item-box__col.guncule-col-mobile:after 
+		display: none
+	.back 
+		.item-box--top .item-box__col:nth-child(2)
+			min-width: 18vw
+		.item-box__col:first-child
+			min-width: 36vw
+		.item-box__col.guncule-col-mobile
+			padding-left: 4.375vw
+		.green-col--last 
+			display: flex 
+			justify-content: flex-start
+			padding-left: 4.375vw
+		.green-col--first 
+			display: flex 
+			justify-content: flex-end
+			padding-right: 4.375vw !important
+
+
+
+
 
 	
 

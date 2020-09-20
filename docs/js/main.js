@@ -13,6 +13,15 @@ $('.hesap-ac__item').click(function(){
 	});
 
 
+$('.details-link-btn').click(function(){	
+		$(".card").addClass("active");
+	});
+
+$('.details-link-btn-back').click(function(){	
+		$(".card").removeClass("active");
+	});
+
+
 // $('.item-gercec-col-wrapper-btn1').click(function(){	
 // 		$(this).toggleClass('active');	
 // 		$('.gercek-a').toggleClass('active');
