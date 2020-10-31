@@ -1011,6 +1011,59 @@ input:focus
 .ib-header
 	padding-left: 16px 
 	padding-right: 16px
+//start ib__boxes style
+.ib__boxes
+	padding-left: 16px 
+	padding-right: 16px
+	margin-bottom: 18px
+	display: flex 
+	justify-content: space-between
+.ib__box
+	background-color: rgb(250, 250, 250)
+	box-shadow: 0.559px 0.829px 4px 0px rgba(0, 0, 0, 0.25)
+	width: 49%
+	border-radius: 2px
+	padding: 15px 0 
+	display: flex 
+	flex-direction: column 
+	align-items: center
+	color: #3a4149
+	text-align: center
+.ib__box-text
+	font-family: $sans1 
+	font-weight: 400
+	font-size: 13px
+.ib__box-value
+	font-size: 18px 
+	font-family: $sans1-semi-bold
+	font-weight: 600
+.input-wrapper
+	margin-right: 10px
+.input-wrapper--btn
+	display: flex 
+	flex-direction: column 
+	justify-content: space-between
+	min-width: 102px
+	width: 102px
+	margin-right: 0
+	
+.ib__btn 
+	height: 40px
+	cursor: pointer
+	border: none
+	border-radius: 3px
+	background-color: rgb(26, 50, 76)
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	color: #fff
+	font-size: 14px 
+	font-family: $sans3-semi-bold 
+	font-weight: 600
+	text-transform: uppercase
+
+
+
+//end ib__boxes style
+
 .ib-header__footer
 	display: flex 
 	justify-content: space-between
@@ -1031,10 +1084,66 @@ input:focus
 	line-height: 1.2 
 	color: $aqua
 	margin-left: 10px
-.table-col--isim
-	min-width: 209px
-.table-col--first
-	min-width: 160px
+.table-row--ib.table-row .table-col:nth-child(3).table-col--isim
+	min-width: 125px
+	width: 125px
+	line-height: 1
+.table-row--ib.table-row .table-col:first-child.table-col--num
+	min-width: 40px
+	width: 40px
+.table-row--ib.table-row .table-col:nth-child(2).table-col--first
+	min-width: 115px
+	width: 115px
+.table-row--ib.table-row .table-col:nth-child(4).table-col-varlik
+	min-width: 80px
+	max-width: 80px
+.table-row.table-row--ib
+	padding-top: 0 
+	padding-bottom: 0
+	padding-right: 10px
+	.table-col
+		padding-top: 7px 
+		padding-bottom: 7px
+.table-row--ib.table-row .table-col:nth-child(5).table-col--bakiye
+	min-width: 83px
+	width: 83px
+	font-weight: 400
+	font-family: $sans1
+.table-row--ib.table-row .table-col--hakindes
+	min-width: 90px
+	width: 90px
+.table-row--ib.table-row
+	.table-col__btn
+		width: 90px
+.table-col--last
+	width: 100px
+	max-width: 100px
+.table-header--ib,
+.table-row--ib
+	padding-left: 0
+	padding-right: 0
+.table-header--ib
+	.table-col
+		padding-top: 10px 
+		padding-bottom: 8px
+	.table-col--num
+		border-right: none
+.table-col--num
+	text-align: center
+	display: flex 
+	justify-content: center
+	font-family: $sans1 
+	border-right: 5px solid #d9dbe1
+	padding-left: 5px
+	margin-right: 9px
+.table-row--ib.table-row--light-grey
+	.table-col--num
+		border-right: 5px solid #f1f2f6
+.item-box--right--padding
+	padding-top: 82px
+	padding-bottom: 82px
+	.payment-metods a
+		margin-bottom: 42px
 .table-col__btn
 	border-radius: 3px
 	background-color: rgb(61, 178, 163)
@@ -1054,8 +1163,8 @@ input:focus
 	display: flex 
 	justify-content: space-between
 .row-two-col .item-box.item-box--top.item-box--grey .item-box__row--ib-wrap .item-box__col--money	
-	min-width: 50% 
-	width: 50%
+	//min-width: 50% 
+	//width: 50%
 .item-box__row--ib-wrap .item-box__col-wrapper
 	display: flex
 	align-items: flex-end
@@ -1067,8 +1176,8 @@ input:focus
 .row-two-col .item-box.item-box--top.item-box--grey .item-box__row--ib-wrap .item-box__col--money:after 
 	display: none
 .row-two-col .item-box.item-box--top.item-box--grey .item-box__row--ib-wrap .item-box__col:nth-child(2)
-	min-width: 200px
-	max-width: 50%
+	//min-width: 200px
+	//max-width: 50%
 .item-box__row--ib-wrap .item-box__col-wrapper
 	min-width: 270px
 .item-box__col--money-value-id
@@ -1081,16 +1190,43 @@ input:focus
 .item-box--grey--ib
 	margin-bottom: 15px
 .ib-details-table 
+
+	.table-row
+		padding-left: 0 
+		padding-right: 0
+		padding-top: 0 
+		padding-bottom: 0
+	.table-col--namber
+		border-right: 5px solid #d9dbe1
+		margin-right: 0
+		padding-left: 5px
+		margin-right: 15px
+	.table-row--light-grey .table-col--namber
+
+		border-color: #f1f2f6
+	.table-row .table-col
+		padding-top: 5px 
+		padding-bottom: 5px
+	.table-row.table-header .table-col--namber
+		border-right: none
 	.table-row .table-col:first-child
-		width: 19%
+		width: 40px
+		display: flex 
+		align-items: center 
+		justify-content: center
 	.table-row .table-col:nth-child(2)
-		width: 13%
+		width: 135px
 	.table-row .table-col:nth-child(3)
-		width: 20%
-		display: block
+		width: 92px
 	.table-row .table-col:nth-child(4)
-		width: 20%
+		width: 125px
 		display: block
+	.table-row .table-col:nth-child(5)
+		width: 146px
+		display: block
+	.table-row .table-col:nth-child(6)
+		width: 94px
+
 .hesap-ac-text
 	text-align: center
 	font-size: 16px
@@ -1519,6 +1655,126 @@ input:focus
 .payment-metods__tab.payment-metods__tab--papar .logo-papar
 	max-width: 95%
 	width: 95%
+.back-wrapper--ib
+	display: flex 
+	justify-content: space-between
+.ib-header .ib-details__btn
+	width: 238px 
+	height: 40px
+	display: flex 
+	align-items: center 
+	justify-content: center
+	background-color: rgb(61, 178, 163)
+	border-radius: 3px
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	color: #fff
+	font-family: $sans1-semi-bold 
+	font-weight: 600
+	font-size: 18px
+.ib-header .ib-details__btn:hover
+	background-color: rgb(49, 146, 134)
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2)
+	color: #fff
+.back-wrapper
+	padding-bottom: 3px
+.item-box__row-ib-det
+	.col-title--meta
+		margin-top: 0
+		line-height: 1.1
+	.item-box__col--money-value
+		margin-bottom: 5px
+		font-size: 24px
+		white-space: nowrap
+	.item-box__col--money
+		margin-right: 19px
+
+.item-box.item-box--grey--ib.item-box--det
+	.col-title
+		line-height: 1
+
+	.item-box__row.item-box__row-ib-det.item-box__row--ib-wrap
+		justify-content: flex-start
+
+		.item-box__col--money
+			min-width: 241px 
+			width: 241px
+			margin-left: 10px
+			margin-right: 5px
+			.item-box__col-wrapper--id1
+				min-width: auto
+		.col-title--mail.col-title--meta
+			text-transform: none
+			margin-bottom: 3px
+	.item-box__col:first-child:before 
+		display: none
+	.item-box__col
+		position: relative
+	.item-box__col:after
+		content: ''
+		position: absolute
+		height: 45px
+		width: 4px
+		top: 50%
+		transform: translateY(-50%)
+		left: 0
+		border-radius: 4px
+		display: block
+		background: #d9dbe1
+	.item-box__col--bakiye
+		display: flex 
+		justify-content: center
+		width: 102px
+		min-width: 102px
+		.item-box__col-wrapper
+			flex-direction: column
+			min-width: auto
+			align-items: flex-start
+	.item-box__col:nth-child(3).item-box__col--varlik
+		padding-left: 0
+		width: 98px
+		min-width: 98px
+		display: flex 
+		justify-content: center
+.item-box__col.item-box__col--geri
+	max-width: 120px
+	padding-left: 20px
+	min-width: 120px
+	//margin-right: 20px
+
+	.item-box__col-wrapper--id
+		flex-direction: column
+		display: flex
+		align-items: flex-start
+		min-width: auto 
+		max-width: auto
+		.item-box__col--money-value-id
+			margin-left: 0
+.item-box-ib--detail
+	padding-top: 92px 
+	padding-bottom: 50px
+	.payment-metods a 
+		margin-bottom: 80px
+.table-herkile-ib
+	.table-col:first-child 
+		width: 0 
+		min-width: 0 
+		max-width: 0
+	.table-row
+		justify-content: flex-start
+	.table-row .table-col:nth-child(2)
+		width: 22%
+		margin-left: 1%
+	.table-row .table-col:nth-child(3)
+		width: 36%
+	.table-row .table-col:nth-child(4)
+		width: 23%
+.item-box.item-box-ib-herek
+	padding-top: 95px 
+	padding-bottom: 95px
+	a 
+		margin-bottom: 51px
+
+
 @import "media"
 
 
