@@ -1453,16 +1453,21 @@ input:focus
 	height: 100vh 
 	overflow-y: auto
 	background: rgba(0, 0, 0, .8)
-	display: none
-.popup.active	
-	display: flex 
+	display: flex
 	justify-content: center
 	align-items: flex-start
+	display: none
 	padding-top: 11.250vw
+	z-index: 99999
+.popup.active	
+	display: flex 
+	
+	
 .popup__content
 	width: 480px
 	background: #fff
 	border-radius: 5px
+	margin-bottom: 50px
 .popup__content__header
 	text-align: center
 	background: url('../img/popup-header.png')
